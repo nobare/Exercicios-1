@@ -1,5 +1,4 @@
-
-const election = () => {
+module.exports = function (
     const data = getInput();
     let total = (parseInt(data.branco) + parseInt(data.nulo) + parseInt(data.valid));
     let porc = { branco, nulo, valido } = {

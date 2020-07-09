@@ -1,5 +1,4 @@
-
-const custoFinal = () => {
+module.exports = function()
     const custoCarro = getInput().custo;
     let dist = 28;
     let imposto = 45;

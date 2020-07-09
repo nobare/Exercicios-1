@@ -1,5 +1,4 @@
-
-const salFinal = () => {
+module.exports = function() {}
     const {salario, qntCarro, priceCar} = getInput();
     comisQnt = qntCarro * 200;
     let comissao = priceCar.reduce((accum, pie) => {
