@@ -7,4 +7,3 @@ module.exports = function() {}
     }, 0 );
     total = (salario + comissao + comisQnt);
     output.innerHTML += `Salario final de: ${total}.\n`;
-}

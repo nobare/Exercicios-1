@@ -1,5 +1,4 @@
 module.exports = function()
-    const custoCarro = getInput().custo;
     let dist = 28;
     let imposto = 45;
     let preco = { totalDist, porcImpos } = {
@@ -9,3 +8,4 @@ module.exports = function()
     let custoTotal = (parseInt(custoCarro) + parseInt(preco.totalDist) + parseInt(preco.porcImpos));
     output.innerHTML += `Preço total do carro: ${custoTotal}.\n`;
 }
+

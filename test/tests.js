@@ -38,7 +38,7 @@ Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), ca
   })
 });
 
-describe.only(` 
+describe(` 
 Exercicio 7
 Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade
 dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias. 
@@ -49,15 +49,15 @@ dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 
   })
 });
 
-describe.only(` 
+describe(` 
 Exercicio 8
 Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos
 brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total
 de eleitores. 
 `, function (){
-  it('porcentual', function(){
-    const idadeTotal = exercicio7(1, 3, 10)
-    expect(idadeTotal).be.equal(465)
+  it.only('porcentual', function(){
+    const idadeTotal = exercicio7(3, 3, 3)
+    expect(idadeTotal).be.equal(33, 33, 33)
   })
 });
 
@@ -76,7 +76,6 @@ Calcular e escrever o valor do novo salário.
   })
 });
 
-
 describe(` 
 Exercicio 10
 O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
@@ -89,7 +88,6 @@ calcular e escrever o custo final ao consumidor.
     expect(mediaFinal).be.equal(7.9)
   })
 });
-
 
 describe(` 
 Exercicio 11
@@ -104,7 +102,6 @@ vendedor.
     expect(mediaFinal).be.equal(7.9)
   })
 });
-
 
 describe(` 
 Exercicio 12
