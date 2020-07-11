@@ -56,8 +56,8 @@ brancos, nulos e válidos. Calcular e escrever o percentual que cada um represen
 de eleitores. 
 `, function (){
   it('Porcentual dos Votos', function(){
-    const idadeTotal = exercicio7(3, 3, 3)
-    expect(idadeTotal).be.equal({ branco: 33.33, nulo: 33.33, validos: 33.33 })
+    const porcentagem = exercicio8(3, 3, 3)
+    expect(porcentagem).be.equal({ branco: 33, nulo: 33, validos: 33 })
   })
 });
 
