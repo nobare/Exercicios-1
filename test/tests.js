@@ -49,15 +49,15 @@ dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 
   })
 });
 
-describe(` 
+describe.only(` 
 Exercicio 8
 Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos
 brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total
 de eleitores. 
 `, function (){
-  it.only('porcentual', function(){
+  it('Porcentual dos Votos', function(){
     const idadeTotal = exercicio7(3, 3, 3)
-    expect(idadeTotal).be.equal(33, 33, 33)
+    expect(idadeTotal).be.equal({ branco: 33.33, nulo: 33.33, validos: 33.33 })
   })
 });
 
@@ -83,9 +83,9 @@ distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o perc
 seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
 calcular e escrever o custo final ao consumidor. 
 `, function (){
-  it('Média final', function(){
-    const mediaFinal = exercicio10(7, 5, 10)
-    expect(mediaFinal).be.equal(7.9)
+  it('Custo final do consumidor', function(){
+    const custoFinal = exercicio10(2000)
+    expect(custoFinal).be.equal(3460)
   })
 });
 
@@ -97,9 +97,9 @@ efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, 
 vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do
 vendedor.
 `, function (){
-  it('Média final', function(){
-    const mediaFinal = exercicio11(7, 5, 10)
-    expect(mediaFinal).be.equal(7.9)
+  it('Salario Total', function(){
+    const salarioTotal = exercicio11(10, 10000, 2000, 500)
+    expect(salarioTotal).be.equal(7500)
   })
 });
 
@@ -108,9 +108,9 @@ Exercicio 12
 Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor
 correspondente em graus Celsius (baseado na fórmula abaixo):
 `, function (){
-  it('Média final', function(){
-    const mediaFinal = exercicio12(7, 5, 10)
-    expect(mediaFinal).be.equal(7.9)
+  it('Graus em celcius', function(){
+    const grausCelcius = exercicio12(100)
+    expect(grausCelcius).be.equal(37.7)
   })
 });
 
@@ -131,9 +131,9 @@ Exercicio 14
 Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso
 contrário escrever NÃO É MAIOR QUE 10! 
 `, function (){
-  it('Média final', function(){
-    const mediaFinal = exercicio14(7, 5, 10)
-    expect(mediaFinal).be.equal(7.9)
+  it('Maior ou menos que dez', function(){
+    const comparaçao = exercicio14(11)
+    expect(comparaçao).be.equal('maior que dez')
   })
 });
 

@@ -1,9 +1,5 @@
-module.exports = function() {}
-    const {salario, qntCarro, priceCar} = getInput();
-    comisQnt = qntCarro * 200;
-    let comissao = priceCar.reduce((accum, pie) => {
-        let comiss = ( pie/100 ) * 5;
-        return comiss + accum;
-    }, 0 );
-    total = (salario + comissao + comisQnt);
-    output.innerHTML += `Salario final de: ${total}.\n`;
+module.exports = function(qntCarro, valorTotalVendas, salarioFixo,  valorPorQntCarro) {
+   comissaoVendas = valorTotalVendas * 0.05;
+   comissaoQntCarro = qntCarro * valorPorQntCarro;
+    return salarioFixo + comissaoVendas + comissaoQntCarro;
+}
